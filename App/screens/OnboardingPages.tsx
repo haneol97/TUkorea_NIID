@@ -90,19 +90,16 @@ const customPages = (onTutorialCompleted: GenericFn, theme: Theme) => {
   const imageDisplayOptions = createImageDisplayOptions(theme)
   return (
     <>
-      <View style={{ alignItems: 'center' }}>
+      <View style={{ alignItems: 'center', backgroundColor: '#ffffff' }}>
         <SecureImage {...imageDisplayOptions} />
       </View>
-      <View style={{ marginLeft: 20, marginRight: 20, marginTop: 30 }}>
-        <Text style={[defaultStyle.headerText, { fontSize: 18 }]}>Ornare suspendisse sed nisi lacus</Text>
-        <Text style={[defaultStyle.bodyText, { marginTop: 20 }]}>
-          Enim facilisis gravida neque convallis a cras semper. Suscipit adipiscing bibendum est ultricies integer quis
-          auctor elit sed.
-        </Text>
+      <View style={{ marginLeft: 20, marginRight: 20, marginTop: 30, backgroundColor: '#ffffff' }}>
+        <Text style={[defaultStyle.headerText, { fontSize: 18 }]}>개인의 정보 보호</Text>
+        <Text style={[defaultStyle.bodyText, { marginTop: 20 }]}>개인의 정보를 기기에 보관합니다</Text>
       </View>
-      <View style={{ marginTop: 'auto', marginBottom: 20, paddingHorizontal: 20 }}>
+      <View style={{ marginTop: 'auto', marginBottom: 20, paddingHorizontal: 20, backgroundColor: '#ffffff' }}>
         <Button
-          title={'Get Started'}
+          title={'시작하기'}
           accessibilityLabel={'Get Started'}
           testID={testIdWithKey('GetStarted')}
           onPress={onTutorialCompleted}
@@ -116,13 +113,13 @@ const customPages = (onTutorialCompleted: GenericFn, theme: Theme) => {
 const guides: Array<{ image: React.FC<SvgProps>; title: string; body: string }> = [
   {
     image: CredentialList,
-    title: 'Lorem ipsum dolor sit amet',
-    body: 'Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus.',
+    title: 'DID 기반 반려동물 등록증 입니다.',
+    body: '반려동물의 정보를 저장하고 관리할수 있습니다.',
   },
   {
     image: ScanShare,
-    title: 'Excepteur sint occaecat ',
-    body: 'Mollis aliquam ut porttitor leo a diam sollicitudin tempor.',
+    title: 'QR코드를',
+    body: 'QR코드를 생성하여 제출할수 있습니다.',
   },
 ]
 
@@ -132,7 +129,7 @@ const createPageWith = (image: React.FC<SvgProps>, title: string, body: string, 
   const imageDisplayOptions = createImageDisplayOptions(theme)
   return (
     <>
-      <View style={{ alignItems: 'center' }}>{image(imageDisplayOptions)}</View>
+      <View style={{ alignItems: 'center', backgroundColor: '#ffffff' }}>{image(imageDisplayOptions)}</View>
       <View style={{ marginLeft: 20, marginRight: 20, marginTop: 30 }}>
         <Text style={[defaultStyle.headerText, { fontSize: 18 }]}>{title}</Text>
         <Text style={[defaultStyle.bodyText, { marginTop: 20 }]}>{body}</Text>

@@ -174,8 +174,8 @@ const RootStack: React.FC<RootStackProps> = (props: RootStackProps) => {
           {(props) => (
             <Onboarding
               {...props}
-              nextButtonText={'Next'}
-              previousButtonText={'Back'}
+              nextButtonText={'다음'}
+              previousButtonText={'이전'}
               pages={pages(onTutorialCompleted, theme)}
               style={carousel}
             />

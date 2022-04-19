@@ -76,12 +76,12 @@ export const zeroOpacity = 0.0
 export const borderWidth = 2
 
 const BrandColors: BrandColors = {
-  primary: '#42803E',
+  primary: '#0B409C',
   primaryDisabled: `rgba(53, 130, 63, ${lightOpacity})`,
   secondary: '#FFFFFFFF',
   secondaryDisabled: `rgba(53, 130, 63, ${heavyOpacity})`,
   highlight: '#FCBA19',
-  primaryBackground: '#000000',
+  primaryBackground: '#FFFFFF',
   secondaryBackground: '#313132',
   link: '#FFFFFF',
 }
@@ -100,7 +100,7 @@ const NotificationColors: NotificationColors = {
   info: '#313132',
   infoBorder: '#0099FF',
   infoIcon: '#0099FF',
-  infoText: '#FFFFFF',
+  infoText: '#000000',
   warn: '#313132',
   warnBorder: '#FCBA19',
   warnIcon: '#FCBA19',

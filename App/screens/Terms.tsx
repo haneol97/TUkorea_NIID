@@ -57,7 +57,7 @@ const Terms: React.FC = () => {
   return (
     <SafeAreaView style={[style.container]}>
       <ScrollView>
-        <InfoTextBox>Please agree to the terms and conditions below before using this application.</InfoTextBox>
+        <InfoTextBox>여기내용은 빼버려야할꺼같아 넘어가자 아니면 로그인 화면으로 바꿔도 좋을듯</InfoTextBox>
         <Text style={[style.bodyText, { marginTop: 20, marginBottom: 20 }]}>
           <Text style={[style.bodyText, { fontWeight: 'bold' }]}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.

@@ -90,6 +90,7 @@
     "eslint-import-resolver-typescript": "^2.5.0",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-prettier": "^3.3.1",
+    "husky": "4",
     "jest": "^27.5.1",
     "lint-staged": "^11.2.6",
     "metro-react-native-babel-preset": "^0.66.2",
