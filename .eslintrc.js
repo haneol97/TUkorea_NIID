@@ -28,6 +28,7 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'import'],
   rules: {
+    //tsx파일 열면 생기는 prettier오류 해결
     'prettier/prettier': [
       'error',
       {
