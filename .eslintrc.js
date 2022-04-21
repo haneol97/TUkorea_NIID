@@ -28,6 +28,12 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'import'],
   rules: {
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'auto',
+      },
+    ],
     // Type is enforced by callers. Not entirely, but it's good enough.
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
