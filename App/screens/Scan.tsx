@@ -56,7 +56,7 @@ const Scan: React.FC<ScanProps> = ({ navigation }) => {
       if (!connectionRecord?.id) {
         throw new BifoldError(
           'Unable to accept connection',
-          'There was a problem while accepting the connection.',
+          'There was a problem while accepting the connection1.',
           1024
         )
       }
@@ -65,7 +65,7 @@ const Scan: React.FC<ScanProps> = ({ navigation }) => {
     } catch (err) {
       const error = new BifoldError(
         'Unable to accept connection',
-        'There was a problem while accepting the connection.',
+        'There was a problem while accepting the connection2.',
         1024
       )
 
